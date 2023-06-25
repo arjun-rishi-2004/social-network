@@ -1,0 +1,47 @@
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture-container label {
+    cursor: pointer;
+  }
+  
+  .profile-picture-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #cccccc;
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+  }
+  
+  .profile-details label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details input[type="text"],
+  .profile-details input[type="email"],
+  .profile-details textarea,
+  .profile-details input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details textarea {
+    height: 80px;
+  }
+  
