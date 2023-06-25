@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+</head>
+<body>
+  <h1>User Profile</h1>
+
+  <div id="user-details">
+    <p>Username: <span id="username"></span></p>
+    <p>Email: <span id="email"></span></p>
+    <p>Password: <span id="password"></span></p>
+  </div>
+
+  <script>
+    // Retrieve user details from local storage
+    let userJSON = localStorage.getItem("user");
+    let user = JSON.parse(userJSON);
+
+    // Access and display user details in the HTML elements
+    let usernameElement = document.getElementById("username");
+    let emailElement = document.getElementById("email");
+    let passwordElement = document.getElementById("password");
+
+    usernameElement.textContent = user.username;
+    emailElement.textContent = user.email;
+    passwordElement.textContent = user.password;
+  </script>
+</body>
+</html>
